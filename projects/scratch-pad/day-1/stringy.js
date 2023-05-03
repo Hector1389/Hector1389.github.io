@@ -175,16 +175,23 @@ if (stringOne.length > stringTwo.length){
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-if (stringOne.sort().toLowerCase() > stringTwo.sort().toLowerCase()){
+// if (stringOne === stringTwo){
+//     return 0;
+// }else if (stringOne.split().sort() > stringTwo.split().sort()){
+//     return -1;
+// }else if (stringOne.split().sort() < stringTwo.split().sort()){
+//     return 1;
+// }
+
+if (stringOne.split().sort() < stringTwo.split().sort()){
     return 1
-}else if (stringOne.sort().toLowerCase() < stringTwo.sort().toLowerCase()){
+}else if (stringOne.split().sort() > stringTwo.split().sort()){
     return -1
-}else if (stringOne.sort().toLowerCase() === stringTwo.sort().toLowerCase()){
+}else {
     return 0
 }
 
-
-    // YOUR CODE ABOVE HERE //
+// YOUR CODE ABOVE HERE //
 }
 
 
@@ -198,7 +205,13 @@ if (stringOne.sort().toLowerCase() > stringTwo.sort().toLowerCase()){
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-r
+    if (stringOne.split().sort() > stringTwo.split().sort()){
+        return 1
+    }else if (stringOne.split().sort() < stringTwo.split().sort()){
+        return -1
+    }else {
+        return 0
+    }
 
 
     // YOUR CODE ABOVE HERE //
