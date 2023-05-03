@@ -23,7 +23,19 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
+    // declare the variable result and give it the value of an empty array
+    var result = [];
+    // 
+    if (start <= end) {
+      for (var i = start; i <= end; i++) {
+        result.push(i);
+      }
+    } else {
+      for (var j = start; j >= end; j--) {
+        result.push(j);
+      }
+    }
+    return result;
     
     
     
